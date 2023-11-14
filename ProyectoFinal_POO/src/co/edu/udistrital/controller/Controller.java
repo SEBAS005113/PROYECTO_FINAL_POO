@@ -12,7 +12,7 @@ public class Controller {
 	public Controller() {
 		// TODO Auto-generated constructor stub
 		try {
-            EnvioEmail m = new EnvioEmail("co/edu/udistrital/entity.init");
+            EnvioEmail m = new EnvioEmail("co.edu.udistrital.entity/EnvioEmail.init");
 
             m.enviarEmail("Test", "Hola mundo", "administrador@discoduroderoer.es");
             

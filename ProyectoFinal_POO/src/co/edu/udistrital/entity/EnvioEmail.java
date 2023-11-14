@@ -24,15 +24,14 @@ package co.edu.udistrital.entity;
 	        init();
 	        loadConfig(ruta);
 
-	        session = Session.getDefaultInstance(properties);
 	    }
 	    
 	    private void init() {
 	    	 
-			properties.put("mail.smtp.host", "mail.gmail.com");
+			properties.put("mail.smtp.host", "smtp.gmail.com");
 			properties.put("mail.smtp.starttls.enable", "true");
-			properties.put("mail.smtp.port",25);
-			properties.put("mail.smtp.mail.sender","emisor@gmail.com");
+			properties.put("mail.smtp.port",587);
+			properties.put("mail.smtp.mail.password","CLAVE");
 			properties.put("mail.smtp.user", "vanoyortizj@gmail.com");
 			properties.put("mail.smtp.auth", "true");
 	 
